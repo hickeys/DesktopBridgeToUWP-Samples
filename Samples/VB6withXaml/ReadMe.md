@@ -5,7 +5,7 @@ This sample demonstrates how to extend a Visual Basic 6 application to use the U
 AppxManifest
 ------------
 
-To understand how the UWP and Desktop Bridge tooling enables this scenario, let’s look at the relevant lines in the [AppxManifest.xml] (https://github.com/Microsoft/DesktopBridgeToUWP-Samples/blob/master/Samples/VB6withXaml/Xaml.MapUI/Package.appxmanifest) file for the solution. The entry point here is the VB6 application, that we have converted using the Desktop Bridge. Now we can add a UWP component (implemented in MapUI.exe) to the package, which provides the XAML UI. To facilitate the activation of the modern component from the existing application, we define a protocol extension in the manifest. Furthermore, note that we need to declare two capabilities: (a) ‘runFullTrust’ to keep the VB6 code running at the same level of trust as before the Desktop Bridge conversion and (b) ‘internetClient’ for the Map control to download map data from the internet.
+To understand how the UWP and Desktop Bridge tooling enables this scenario, letâ€™s look at the relevant lines in the [AppxManifest.xml] (https://github.com/Microsoft/DesktopBridgeToUWP-Samples/blob/master/Samples/VB6withXaml/Xaml.MapUI/Package.appxmanifest) file for the solution. The entry point here is the VB6 application, that we have converted using the Desktop Bridge. Now we can add a UWP component (implemented in MapUI.exe) to the package, which provides the XAML UI. To facilitate the activation of the modern component from the existing application, we define a protocol extension in the manifest. Furthermore, note that we need to declare two capabilities: (a) â€˜runFullTrustâ€™ to keep the VB6 code running at the same level of trust as before the Desktop Bridge conversion and (b) â€˜internetClientâ€™ for the Map control to download map data from the internet.
 
 Build/Deploy and Run the sample
 -------------------------------
@@ -20,9 +20,9 @@ To modify and rebuild the VB6 application, you will need to install the legacy V
  - Press Ctrl + F5 to run
  - To debug use attach to the proccess or follow the guidance [here - Debugging your Desktop Bridge app section] (https://msdn.microsoft.com/en-us/windows/uwp/porting/desktop-to-uwp-packaging-dot-net)
 
-Windows Store App
+Microsoft Store App
 -----------------
- You can also check out the app in the [Window Store] (https://www.microsoft.com/store/apps/9n191ncxf2f6)
+ You can also check out the app in the [Microsoft Store](https://www.microsoft.com/store/apps/9n191ncxf2f6)
 
   
 
